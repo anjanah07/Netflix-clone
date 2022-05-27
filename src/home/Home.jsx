@@ -1,15 +1,20 @@
-import { AcUnit } from "@material-ui/icons"
-import "./home.scss"
-import Navbar from "../components/navbar/Navbar"
-
+import { AcUnit } from "@material-ui/icons";
+import "./home.scss";
+import Navbar from "../components/navbar/Navbar";
+import Featured from "../components/featured/Featured";
+import List from "../components/list/List";
 
 const Home = () => {
   return (
-    <div className  = "home">
-    <Navbar/>
-    <img  width = "100%" src="https://i.pinimg.com/474x/7c/b2/38/7cb238b1eb3bc2d92d19afd891a112cd.jpg" alt="" />
+    <div className="home">
+      <Navbar />
+      <Featured type="movie" />
+      <List />
+      <List/>
+      <List/>
+      <List/>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
