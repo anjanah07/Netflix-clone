@@ -10,7 +10,7 @@ import { useState } from "react";
 export default function ListItem({ index, img, url }) {
   const [isHovered, setIsHovered] = useState(false);
   // https://www.youtube.com/embed/ga1m0wjzscU
-  const trailer = `${url}?autoplay=1&controls=0&loop=1&modestbranding=1`;
+  const trailer = `${url}?controls=0&loop=1&modestbranding=1`;
 
   return (
     <div
@@ -25,7 +25,7 @@ export default function ListItem({ index, img, url }) {
             src={trailer}
             title="YouTube video player"
             frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; "
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; "
           ></iframe>
           <div className="itemInfo">
             <div className="icons">
